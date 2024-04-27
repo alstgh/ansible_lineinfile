@@ -19,5 +19,3 @@
        msg: "Line does NOT exist."
      when: not out.found
 ### search string
-### search string
-### search string
