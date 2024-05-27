@@ -32,19 +32,3 @@
 #     - servers
 #         - www.google.com
 #         - www.ansible.com
-
-
-# yaml- file "my.yml":
-# root:
-#   child1:
-#     key1: value1
-#     #key2: value2
-#   arrays:
-#     - animals
-#         - bear
-#         - cat
-#         - dog
-#         #- elephant
-#     - servers
-#         - www.google.com
-#         - www.ansible.com
