@@ -19,3 +19,26 @@
        msg: "Line does NOT exist."
      when: not out.found
 ### search string
+
+
+- name: Search (ensure) string line in the file
+  gather_facts: 'no'
+  hosts: localhost
+  tasks:
+   - name: Ensure in the "/home/user/my.yml" contains "lx_debian_tst:"
+     lineinfile:
+       path: /home/user/my.yml
+       regexp: '^(\s*)lx_debian_tst:'
+       state: absent
+     check_mode: yes
+     changed_when: false
+     register: out
+
+   - debug:
+       msg: "Yes, line exists."
+     when: out.found
+
+   - debug:
+       msg: "Line does NOT exist."
+     when: not out.found
+### search string
