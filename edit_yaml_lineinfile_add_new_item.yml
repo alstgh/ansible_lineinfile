@@ -58,3 +58,19 @@ root:
     - servers
         - www.google.com
         - www.redhat.com 
+
+yaml-file "my.yml":
+root:
+  child1:
+    key1: NEWvalue1
+    key2: NEWvalue2
+  arrays:
+    - animals
+        - bear
+        - cat
+        - dog
+        - heffalump
+    - servers
+        - www.google.com
+        - www.redhat.com 
+
